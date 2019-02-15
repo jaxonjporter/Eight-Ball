@@ -30,13 +30,12 @@ class Eightball
       "Very doubtful"
     ]
     @answerarray = @choicearray.clone
+    puts "\nWelcome to the Magic 8 Ball.".cyan
     question
   end
 
   def question
-    puts "Welcome to the Magic 8 Ball.".cyan
-    puts
-    puts "Type a question to get an answer, or type quit to end the program".cyan
+    puts "\nType a question to get an answer, or type quit to end the program".cyan
     print "> ".cyan
     @choice = gets.downcase.strip
     while @choice != "quit"
